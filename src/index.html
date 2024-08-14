@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Époque</title>
+    <link rel="stylesheet" href="./components/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzHU+F+2Ow+6XtQAVr+HlTe6qevq8E6aC4U7PbVvLe4lNp3wIV3lKUn96ZxN2oI0K9mJ5r8kD6YPl2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="belle-epoque-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="social-media">
+                    <span>Suivez-nous:</span>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="hotel-logo">
+                    <h1>La Belle Époque</h1>
+                    <p>****</p>
+                    <h3>Toulouse</h3>
+                </div>
+                <div class="reservation-info">
+                    <a href="#reservation" class="reservation-link">RÉSERVATION</a>
+                </div>
+            </div>
+        </div>
+        <div class="container main-nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#rooms">Chambres</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#blog">Actualités</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero belle-epoque-hero">
+        <div class="hero-content">
+            <div id="hero-carousel" class="carousel">
+                <div class="slide active">
+                    <img src="assets/img/hero-hotel.png" alt="Hero Image 1">
+                    <div class="caption">Ressource & Repos</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/hero-room.jpg" alt="Hero Image 2">
+                    <div class="caption">Luxueux & Confort</div>
+                </div>
+                <div class="slide">
+                    <img src="assets/img/hero-spa.jpg" alt="Hero Image 3">
+                    <div class="caption">Détente & Bien-être</div>
+                </div>
+            </div>
+            <div class="booking-form">
+                <h2>Réserver une Chambre</h2>
+                <form action="#" method="post" class="availability-form">
+                    <div class="form-group">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Arrivée</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Départ</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                    <div class="form-group-inline">
+                        <div class="form-group">
+                            <label for="adults">Adultes</label>
+                            <select id="adults" name="adults" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Enfants</label>
+                            <select id="children" name="children" required>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Vérifier la disponibilité</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bandeau des services -->
+    <div class="services-banner">
+
+        <div class="services">
+            <div class="service-item" data-tooltip="Room Service">
+                <i class="fas fa-concierge-bell"></i>
+                <span>Room Service</span>
+            </div>
+            <div class="service-item" data-tooltip="Wi-Fi Gratuit">
+                <i class="fas fa-wifi"></i>
+                <span>Wi-Fi Gratuit</span>
+            </div>
+            <div class="service-item" data-tooltip="Piscine">
+                <i class="fas fa-swimming-pool"></i>
+                <span>Piscine</span>
+            </div>
+            <div class="service-item" data-tooltip="Salle de sport">
+                <i class="fas fa-dumbbell"></i>
+                <span>Salle de sport</span>
+            </div>
+            <div class="service-item" data-tooltip="Restaurant">
+                <i class="fas fa-utensils"></i>
+                <span>Restaurant</span>
+            </div>
+            <div class="service-item" data-tooltip="Salle de réunion">
+                <i class="fas fa-users"></i>
+                <span>Salle de réunion</span>
+            </div>
+        </div>
+    </div>
+
+<!-- Section des services avec galerie de chambres -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="services-content">
+            <div class="gallery-wrapper">
+                <h2 class="header">Nos Chambres</h2>
+                <div class="room-card">
+                    <img src="./assets/img/junior-suite.webp" alt="Junior Suite" class="room-image">
+                    <div class="room-info">
+                        <h3 class="room-title">Chambre Triple</h3>
+                        <div class="room-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4 customer reviews</span>
+                        </div>
+                        <p class="room-description">Cette chambre Triple est équipée de trois lits simples, d’une salle de bains privative, et d’une connexion Wi-Fi gratuite. Idéale pour les familles ou les groupes d’amis souhaitant profiter d’un hébergement spacieux et confortable.</p>
+                        <button class="room-button">More Info</button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="./assets/img/double-suite.webp" alt="Double Suite" class="room-image">
+                    <div class="room-info">
+                        <h3 class="room-title">Suite Junior</h3>
+                        <div class="room-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4 customer reviews</span>
+                        </div>
+                        <p class="room-description">La Suite Junior offre un espace de vie élégant avec un lit king-size, une salle de bains privative avec des articles de toilette gratuits, et une connexion Wi-Fi haut débit. Profitez d’une expérience luxueuse et reposante dans cette suite bien aménagée.
+                        </p>
+                        <button class="room-button">More Info</button>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="./assets/img/double-suite.webp" alt="Double Suite" class="room-image">
+                    <div class="room-info">
+                        <h3 class="room-title">Chambre Deluxe</h3>
+                        <div class="room-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4 customer reviews</span>
+                        </div>
+                        <p class="room-description">Cette chambre Deluxe comprend un lit double confortable, une salle de bains privative, un coin salon, et une connexion Wi-Fi gratuite. Parfaite pour un séjour relaxant avec toutes les commodités nécessaires à portée de main.</p>
+                        <button class="room-button">En savoir plus</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section des actualités -->
+<section id="news" class="news">
+    <div class="container">
+        <h2 class="header">Nos Actualités</h2>
+        <div class="news-content">
+            <article class="news-item">
+                <img src="./assets/img/spa.jpeg" alt="News Image 1" class="news-image">
+                <div class="news-info">
+                    <h3 class="news-title">Nouveaux services de spa</h3>
+                    <p class="news-date">Publié le 1er Août 2024</p>
+                    <p class="news-description">Nous sommes ravis d'annoncer l'ouverture de notre nouveau spa avec des services de massage, de soins de la peau et bien plus encore.</p>
+                    <a href="#" class="news-button">Lire la suite</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <img src="./assets/img/salle-sport.webp" alt="News Image 2" class="news-image">
+                <div class="news-info">
+                    <h3 class="news-title">Offre spéciale été</h3>
+                    <p class="news-date">Publié le 15 Juillet 2024</p>
+                    <p class="news-description">Profitez de notre offre spéciale d'été avec une réduction de 20% sur toutes les réservations pour les séjours de juin à août.</p>
+                    <a href="#" class="news-button">Lire la suite</a>
+                </div>
+            </article>
+            <article class="news-item">
+                <img src="./assets/img/restaurant.jpeg" alt="News Image 3" class="news-image">
+                <div class="news-info">
+                    <h3 class="news-title">Événements de l'hôtel</h3>
+                    <p class="news-date">Publié le 1er Juin 2024</p>
+                    <p class="news-description">Découvrez les événements à venir à l'hôtel, y compris des soirées à thème, des ateliers et des conférences.</p>
+                    <a href="#" class="news-button">Lire la suite</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Section de contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="header">Contactez-Nous</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>A108 Adam Street,<br>New York, NY 535022</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@example.com<br>contact@example.com</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Heures d'ouverture</h3>
+                    <p>Lundi - Vendredi<br>9:00 - 17:00</p>
+                </div>
+            </div>
+            <form action="forms/contact.php" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Votre nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Envoyer le message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <script src="../src/components/scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-section about">
+                <h1>La Belle Époque</h1>
+                <p>****</p>
+                <h3>Toulouse</h3>
+                <p>Découvrez notre hôtel de luxe où le confort et l'élégance se rencontrent. Profitez d'un séjour inoubliable avec nos services haut de gamme.</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Abonnez-vous à notre newsletter pour recevoir les dernières nouvelles et offres.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Suivez-nous</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 La Belle Époque. Tous droits réservés.</p>
+            <p><a href="#mentions-legales">Mentions Légales</a> | Créé par la société <a href="https://www.nexabridge.com" target="_blank">Nexabridge</a></p>
+        </div>
+    </div>
+</footer>
+</html>
